@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <body style="background:linear-gradient(rgba(0, 0,0, 0.3),rgba(0,0,0,0.3)),url('website/formimg1.png') no-repeat center center scroll; -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2><font color="white">Registration From</font></h2><br>
+
+    <div class="container">
+        <form id="registrationForm">
+            <!--first name-->
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">
+                        <font color="white">First Name</font>
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname"  placeholder="Your first name..">
+                </div>
+            </div>
+            <!--last name-->
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">
+                        <font color="white">Last Name</font>
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" placeholder="Your last name..">
+                </div>
+            </div>
+            <!--phone-->
+            <div class="row">
+                <div class="col-25">
+                  <label for="phone"><font color="white">Phone</font></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="phone" id="phone" placeholder="enter your phone">
+                </div>
+              </div>
+              <!--email-->
+              <div class="row">
+                  <div class="col-25">
+                    <label for="Email"><font color="white">Email</font></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="Email" id="Email" placeholder="enter your Email">
+                  </div>
+                </div>
+                <!--skill-->
+                <div class="row" style="padding-top: 3px;">
+                    <div class="col-25">
+                        <label for="skills">
+                            <font color="white">Skills</font>
+                        </label>
+                    </div>
+             >
+                 <select id="skills" required>
+                    <option value="">select a skill</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Html">Html</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Nodejs">Nodejs</option>
+                 </select><br>
+             
+            </div>
+            <div class="btn">
+                
+                <input type="submit" value="Submit">
+            </div>  
+    </div>
+
+   
+
+  
+    
+
+
+
+    </form>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Registration Details</h2>
+            <p>firstname: <span id="popupfName"></span></p>
+            <p>lastname: <span id="popuplName"></span></p>
+            <p>Email: <span id="popupEmail"></span></p>
+            <p>Phone No: <span id="popupPhone"></span></p>
+            <p>Skill: <span id="popupSkill"></span></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
